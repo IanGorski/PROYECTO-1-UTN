@@ -1,0 +1,32 @@
+index.html 
+
+El archivo index.html es la página principal de un sitio web, es decir, el primer archivo que se carga cuando se ingresa a un dominio.
+
+¿Para qué sirve? 
+Permite que el navegador sepa qué contenido mostrar en la pantalla.
+Es fundamental para el correcto funcionamiento del sitio web.
+Si no existe, el navegador mostrará un error 404.
+
+p = para escribir parrafo (Es el elemento)
+
+Heading (encabezados): etiqueta h1 h2 h3 h4 h5 h6
+Nos permite informarle al navegador sobre la importancia y tema de nuestra pagina
+
+
+Anidado (Nesting):
+Etiqueta de cierre pueden anidar otras etiquetas o contenido 
+
+<contenedora><contenida><padre><hijo><nieta></nieta></hijo></padre></contenida></contenedora>
+
+Indentacion (No es una regla, pero es algo recomendado, a esto le decimos buena practica)
+
+<contenedora>
+        <contenida>
+            <padre>
+                <hijo>
+                    <nieta>
+                    </nieta>
+                </hijo>
+             </padre>
+        </contenida>
+    </contenedora>

@@ -1,0 +1,5 @@
+Página shortcuts para Visual Studio 
+
+Text wrap = saltos de linea = Alt + z
+ALT + SHIFT + a : Comentario en el codigo (No va a ser interpretado)
+Seleccionar lo que deseas mover, mantenes ALT + flechitas cursor

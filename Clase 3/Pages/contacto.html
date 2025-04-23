@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="../index.html">ir a inicio</a>
+    <a href="./test/test.html">ir a test</a>
+    <a href="../index.html#seccion-comica">Ir a seccion comica</a>
+    <h1>Contactanos</h1>
+    <form> <!-- Es una etiqueta que sirve para indicar de que se tratara el input-->
+        <div>
+        <label for="">Ingresa tu nombre</label> 
+        <input type="text" placeholder="Cosme fulanito" id="nombre" name="nombre">
+        </div>
+
+        <div>
+        <label for="Ingresa tu edad">Ingresa tu edad</label>
+        <input type="number" id="edad" name="edad">  
+        </div>
+
+        <div>
+        <label for="Fecha-nacimiento">Ingresa tu fecha de nacimiento</label>
+        <input type="datetime-local" id="fecha-nacimiento" name="fecha-nacimiento" placeholder="dd/mm/aaaa">
+        </div>
+
+        <div>
+        <label for="password">Ingresa tu contraseña</label>
+        <input type="password" id="password">
+        <button type="button">mostrar</button>
+        </div>
+
+        <!-- <input type='submit' value='contactar'> -->
+        <!-- Un button dentro de un form por defecto va a enviar el formulario -->
+
+        <!-- Span es para hacer un texto generico -->
+
+        <div> 
+        <span>Cual es tu lenguaje preferido</span>
+        <label for="html">HTML</label>
+        <input type="radio" id="html" name="lenguaje-preferido" value="html">
+
+        <label for="css">CSS</label>
+        <input type="radio" id="css" name="lenguaje-preferido" value="css">
+
+        <label for="js">JS</label>
+        <input type="radio" id="js" name="lenguaje-preferido" value="js">
+        </div>
+
+        <span>Que lenguajes conoces</span>
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html" name="lenguaje-preferido" value="html">
+        
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css" name="lenguaje-preferido" value="css">
+
+        <label for="js">JS</label>
+        <input type="checkbox" id="js" name="lenguaje-preferido" value="js">
+
+        <label for="pais">Selecciona tu pais</label>
+        <select name="pais" id="pais">
+            <option value="AR">Argentina</option>
+            <option value="UR">Uruguay</option>
+            <option value="PR">Paraguay</option>
+            <option value="BR" selected>Brasil</option>
+            <option value="CH">Chile</option>
+        </select>
+
+        <label for="mensaje">Ingrese un mensaje</label>
+        <textarea name="mensaje" id="mensaje" cols="5" rows="10" maxlength="50" required></textarea>   
+
+
+
+        <button
+            type="submit" 
+            onclick="alert('Gracias por contactarnos')"
+            >Contactar</button>          
+        </form> 
+</body>
+</html>
+
+<!-- Placeholder= sirve para indicar que es lo que se tiene que ingresar en el input -->
+<!-- 'Checkbox' Multiples opciones -->
+<!-- 'radio' Una sola opcion -->
+
+<!-- cols cantidad de caracteres en una linea -->
+<!-- rows cantidad de lineas  -->
+<!-- maxlength cantidad de caracteres maximo que se pueden ingresar en el textarea -->

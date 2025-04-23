@@ -1,0 +1,6 @@
+Autoclose tag
+Dracula Theme
+Auto Rename tag
+Indent-rainbow 
+Live server
+Live preview Microsoft 

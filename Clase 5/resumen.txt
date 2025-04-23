@@ -1,0 +1,12 @@
+Crear archivo html y css
+Linkear archivo Link rel stylesheet href
+Es buena practica usar mas de una clase? Si
+
+Valor de Clases
+
+6. Selector universal
+5. Selector de elemento
+4. Selector de clase
+3. Id de Clase (Es una mala practica)
+2. Estilo en línea
+1. !important

@@ -1,0 +1,14 @@
+PAGINA MDN https://developer.mozilla.org/en-US/
+
+https://validator.w3.org/
+
+
+<!--
+    NOTA:  EJERCITACION HTML
+    - La estructura de la página es semántica y accesible.
+    - Se recomienda usar un solo h1 por página para SEO.
+    - Los enlaces internos son placeholders y no llevan a ninguna parte en este momento.
+    - Los comentarios explican la jerarquía de encabezados y la estructura del menú.
+    - Se utilizó una lista anidada para representar un menú multinivel (1-2 niveles).
+    - Se usaron etiquetas <a> para los enlaces, y se escaparon correctamente los símbolos angulares en el caso de <input>.
+    -->
