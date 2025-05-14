@@ -1,0 +1,129 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap');
+
+/* Variables de color */
+:root {
+    --color-principal-700: #1e1345;
+    --color-principal-600: #301c6b;
+    --color-principal-500: #461c66;
+    --color-principal-400: #683ee6;
+    --color-principal-300: #ffffff;
+    --color-icon: #ffd74b;  /* Variable para el color de íconos */
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background-color: var(--color-principal-700);
+    color: var(--color-principal-300);
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px; /* 75rem*/
+    margin: 0 auto;
+    padding: 80px 20px; /* 5rem 1.25rem */
+}
+
+/* Sección de migración */
+.migration-section {
+    border-radius: 16px; /* 1rem */
+    padding: 64px; /* 4rem */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; /* Alineación centrada */
+    justify-content: center; /* Centrado vertical añadido */
+}
+
+/* Encabezado */
+.migration-header {
+    text-align: center;
+    max-width: 800px; /* 50rem */
+    margin: 0 auto 3rem; /* 0 arriba/abajo, auto lados, 3rem abajo */
+}
+
+.migration-header h1 {
+    font-size: 40px; /* 2.5rem */
+    font-weight: 700;
+    margin-bottom: 24px; /* 1.5rem */
+}
+
+.migration-header p {
+    font-size: 18px; /* 1.125rem */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Tarjetas*/
+.features-container {
+    display: flex;
+    gap: 24px; /* 1.5rem */
+    margin-bottom: 40px; /* 2.5rem */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    flex: 300px; /* 18.75rem */ 
+    min-width: 300px; /* 18.75rem */ 
+    background-color: var(--color-principal-600); /* Color de fondo de las tarjetas */
+    padding: 32px; /* 2rem */
+    border-radius: 10px; /* 0.625rem */
+    display: flex; /* Flexbox para alinear contenido */
+    flex-direction: column; /* Cambiado a columna para mejor alineación */
+    align-items: flex-start; /* Alineación a la izquierda */
+    gap: 20px; /* 1.25rem */
+}
+
+.feature-icon {
+    font-size: 32px; /* 2rem */
+    color: var(--color-icon); /* Amarillo definido en variables */
+}
+
+.feature h3 {
+    font-size: 20px; /* 1.25rem */
+    font-weight: 600;
+}
+
+.feature p {
+    font-size: 16px; /* 1rem */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Botón CTA */
+.cta-button {
+    background-color: var(--color-principal-400);
+    color: var(--color-principal-300);
+    padding: 16px 32px; /* 1rem 2rem */
+    border-radius: 8px; /* 0.5rem */
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover,
+.cta-button:focus-visible {
+    background-color: var(--color-principal-500);
+}
+
+.cta-button:active {
+    transform: scale(0.98); /* Efecto al hacer clic */
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .migration-section {
+        padding: 2rem;
+    }
+    .feature {
+        min-width: 100%; /* Ocupa todo el ancho en móviles */
+    }
+}

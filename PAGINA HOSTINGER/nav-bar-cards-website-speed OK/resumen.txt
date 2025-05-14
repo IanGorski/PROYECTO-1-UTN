@@ -1,0 +1,129 @@
+/* ============ BOTÓN FLOTANTE ============ */
+
+  /* Contenedor del botón fijo */
+.ask-kodee-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000; /* Para que esté por encima de otros elementos */  }
+
+  /* Estilo del botón */
+.kodee-btn {
+    display: flex;          /* Se utiliza Flexbox */
+    align-items: center;    /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 8px;               /* Espaciado entre icono y texto */
+
+    background-color: #2f1c6a; /* Color Morado de Hostinger */
+    color: white;
+    border: none;
+    border-radius: 30px;    /* Bordes redondeados */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para efecto flotante */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+  /* Efecto hover (opcional) */
+.kodee-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+  /* Estilo del ícono */
+.kodee-icon {
+    font-size: 20px;
+}
+
+  /* Estilo del texto */
+.kodee-text {
+    line-height: 1;
+}
+
+
+/* ============ MEDIA QUERIES ============ */
+@media (max-width: 768px) {
+    .header__container {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: var(--space-sm) 0;
+    }
+
+    .section-header__title {
+        font-size: 1.75rem;
+    }
+
+@media (max-width: 768px) {
+        .ask-kodee-button {
+            bottom: 10px;
+            right: 10px;
+        }
+    }
+}
+
+
+/* Card review */
+.card-review-container{
+    display: flex;
+    flex-direction: row; 
+    margin-top: 48px;
+    margin-bottom: 24px; 
+    gap: 24px;
+}
+
+.card-review{
+    display: flex;
+    flex-direction: column;
+    border: var(--borde-claro);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card-review__header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 24px 32px;
+    background-color: var(--color-principal-300);
+}
+
+.card-review__header img{
+    width: 64px;
+    height: 64px;
+}
+
+
+.card-review__body{
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px 40px;
+    gap: 24px;
+}
+
+.card-review__body__rating{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: var(--color-principal-500);
+    font-size: 18px;
+}
+
+
+.btn-secondary{
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-principal-500);
+    border: 2px solid var(--color-principal-500);
+    border-radius: 8px;
+    padding: 12px 48px;
+    text-decoration: none;
+}

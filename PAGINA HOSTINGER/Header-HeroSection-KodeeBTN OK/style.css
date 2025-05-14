@@ -1,0 +1,294 @@
+/* ===== VARIABLES ===== */
+:root {
+    /* Colores */
+    --color-primary: #2f1c6a;
+    --color-primary-light: #673de6;
+    --accent: #fc5185;
+    --success: #00b090;
+    --light-bg: #f2f3f6;
+    --dark-text: #1d1e20;
+    --color-gray: #e0e0e0;
+    --color-white: #ffffff;
+
+    /* Tipografía */
+    --font-main: 'DM Sans', sans-serif;
+    --font-size-lg: 2.5rem;
+    --font-size-md: 1.25rem;
+    --font-size-sm: 1rem;
+    --font-size-xs: 0.875rem;
+    --font-weight-medium: 500;  
+
+    /* Espaciados */
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-xs: 0.5rem;
+
+    /* Bordes*/
+    --border-radius-sm: 4px;
+
+    /* Sombras */
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--dark-text);
+    line-height: 1.5;
+}
+
+/* ===== HEADER===== */
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) var(--space-md); /* 1rem horizontal, 1.5rem vertical */
+}
+
+.header__logo svg {
+    height: 30px;
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+.nav__list {
+    display: flex;
+    gap: var(--space-md); /* 1.5rem entre elementos */
+    list-style: none; /* Elimina los bullets/marcadores */
+    }
+
+
+.nav__link {
+    color: var(--color-primary); /* #2f1c6a */
+    /* font-weight: var(--font-weight-medium);  500 */
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.nav__link:hover {
+    color: var(--color-primary-light); /* #673de6 */
+}
+
+.header__actions {
+    display: flex;
+    gap: var(--space-sm); /* 1rem entre botones */
+}
+
+.btn {
+    padding: var(--space-xs) var(--space-md); /* 0.5rem vertical, 1.5rem horizontal */
+    border-radius: var(--border-radius-sm); /* 4px */
+    font-weight: 500;
+}
+.btn--primary {
+    background-color: var(--color-primary); /* #2f1c6a */
+    color: var(--color-white); /* Blanco */
+}
+.btn--outline {
+    border: 1px solid var(--color-gray); /* #e0e0e0 */
+    color: var(--color-primary); /* #2f1c6a */
+}
+
+.header {
+    background-color: var(--color-white); /* Blanco */
+    box-shadow: var(--shadow-sm); /* Sombra ligera */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .header__container {
+        flex-direction: column; /* Apila elementos */
+    }
+    .nav__list {
+        flex-wrap: wrap; /* Enlaces en múltiples líneas si no caben */
+    }
+}
+
+/* ===== HERO SECTION ===== */
+.hero-container {
+    display: flex;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: var(--light-bg);
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    padding-right: 2rem;
+}
+
+.hero-title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: var(--accent);
+}
+
+.feature-list {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: var(--font-size-sm);
+}
+
+.feature-icon {
+    fill: var(--success);
+    width: 16px;
+    height: 16px;
+}
+
+.price-container {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.price-amount {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.promo-text {
+    font-size: var(--font-size-md);
+    margin-bottom: 1.5rem;
+}
+
+.countdown {
+    font-family: monospace;
+    font-size: var(--font-size-md);
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.time-segment {
+    background-color: var(--color-white);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.cta-button {
+    background-color: var(--color-primary-light);
+    color: var(--color-white);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--color-primary);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+  /* Contenedor del botón fijo */
+.ask-kodee-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Para que esté por encima de otros elementos */  
+}
+
+  /* Estilo del botón */
+.kodee-btn {
+    display: flex;          /* Se utiliza Flexbox */
+    align-items: center;    /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 8px;               /* Espaciado entre icono y texto */
+    background-color: #2f1c6a; /* Color Morado de Hostinger */
+    color: var(--color-white);
+    border: none;
+    border-radius: 30px;    /* Bordes redondeados */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para efecto flotante */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+  /* Efecto hover (opcional) */
+.kodee-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+  /* Estilo del ícono */
+.kodee-icon {
+    font-size: 14px;
+}
+
+  /* Estilo del texto */
+.kodee-text {
+    line-height: 1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .feature-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .countdown {
+        justify-content: center;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+}

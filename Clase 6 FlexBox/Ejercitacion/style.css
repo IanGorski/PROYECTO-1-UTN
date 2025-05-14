@@ -1,0 +1,46 @@
+
+/*Normalizacion del CSS*/
+* {
+    box-sizing: border-box; /* Add your styles here */   
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.padre{
+    width: 100vw; /*Viewport width*/
+    height: 100vh; /*Viewport height*/
+    background-color: #34aa10; /* Light gray background */
+    display: flex; /* Enable flexbox layout  Habilita las propiedas flexibles en nuestro elemento*/
+    flex-direction: column; /* Valor por defecto */
+    gap: 20px; /* Space between child elements */
+    /*flex-direction: column;  Change to column layout */
+    /*flex-direction: column-reverse; Change to column reverse layout */
+    /*flex-direction: row-reverse; Change to row reverse layout */
+    /* justify-content: space-between;  Acomodar a los hijos respecto al eje x */
+    padding: 0 40px; /* Add padding to the parent element */
+    justify-content: center; /* Center child elements vertically */
+    /*space-around: Espacio entre los elementos, pero no en los bordes*/
+    /*space-evenly: Espacio entre los elementos y en los bordes*/
+    /*space-between: Espacio entre los elementos, pero no en los bordes*/
+
+    /*
+    ROW:
+        justify-content: horizontal
+        align-items: vertical
+
+    COLUMN:
+        justify-content: vertical
+        align-items: horizontal
+    */
+}
+
+.hijo{
+    width: 250px; /* Set width of child elements */
+    height: 200px; /* Set height of child elements */
+    background-color: #ff0000; /* Red background for child elements */
+    border: 1px solid #000; /* Add a border around child elements */
+    border-radius: 10px; /* Rounded corners for child elements */
+}
+
+
+/* yagni: You aren't gonna need it. */

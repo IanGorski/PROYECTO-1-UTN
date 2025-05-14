@@ -1,0 +1,2 @@
+'*' = universal, la pagina toma todo el estilo.
+Variables de CSS se declaran dentro del :root y su nombre debe empezar con --

@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 2000px; /* Esta variable es solo para probar el scroll */
+}
+  /* Contenedor del botón fijo */
+.ask-kodee-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Para que esté por encima de otros elementos */  
+  }
+
+  /* Estilo del botón */
+.kodee-btn {
+    display: flex;          /* Se utiliza Flexbox */
+    align-items: center;    /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 8px;               /* Espaciado entre icono y texto */
+    background-color: #2f1c6a; /* Color Morado de Hostinger */
+    color: white;
+    border: none;
+    border-radius: 30px;    /* Bordes redondeados */
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para efecto flotante */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+  /* Efecto hover (opcional) */
+.kodee-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+  /* Estilo del ícono */
+.kodee-icon {
+    font-size: 14px;
+}
+
+  /* Estilo del texto */
+.kodee-text {
+    line-height: 1;
+}
